@@ -32,7 +32,7 @@ Output: ["Medical Researcher", "Clinical Biologist", "Pharmaceutical Analyst"]
 ```
 
 ### ⚙️ Setup & Inference
-
+```bash
 # 1. Clone the repo
 git clone https://github.com/yourusername/career-bert-model.git
 cd career-bert-model
@@ -42,6 +42,7 @@ pip install -r requirements.txt
 
 # 3. Run prediction
 python predict.py --input "I enjoy analyzing data and finding patterns"
+```
 
 ###🎯 Use Case
 ##This model is integrated into a larger Career Guidance web application, where users submit their info and receive AI-driven career suggestions instantly.
