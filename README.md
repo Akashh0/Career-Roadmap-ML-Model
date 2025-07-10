@@ -17,10 +17,9 @@ The model leverages **BERT (Bidirectional Encoder Representations from Transform
 ## 🛠️ Tech Stack
 
 - **Model**: `bert-base-uncased` (Hugging Face Transformers)
-- **Frameworks**: PyTorch / TensorFlow (choose one you used)
+- **Frameworks**: TensorFlow
 - **Tokenizer**: WordPiece tokenizer
-- **API**: Flask / FastAPI (if wrapped as an API)
-- **Backend Integration**: Django REST Framework
+- **Backend Integration**: Django REST Framework (Future Plan)
 
 ---
 
@@ -32,13 +31,17 @@ Input: "I'm passionate about biology and want to help people."
 Output: ["Medical Researcher", "Clinical Biologist", "Pharmaceutical Analyst"]
 ```
 
-## career-bert-model/
-##│
-##├── model/
-##│   ├── bert_model.pt         # Trained model weights
-##│   ├── tokenizer/            # Tokenizer config
-##│
-##├── predict.py                # Inference script
-##├── train.py                  # Training script
-##├── requirements.txt
-##└── README.md
+### ⚙️ Setup & Inference
+
+# 1. Clone the repo
+git clone https://github.com/yourusername/career-bert-model.git
+cd career-bert-model
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Run prediction
+python predict.py --input "I enjoy analyzing data and finding patterns"
+
+###🎯 Use Case
+##This model is integrated into a larger Career Guidance web application, where users submit their info and receive AI-driven career suggestions instantly.
